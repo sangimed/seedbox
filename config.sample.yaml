@@ -21,7 +21,7 @@ services:
           # Uncomment to *NOT* generate LetsEncrypt certificate (useful for local domains)
           # httpOnly: true
   - name: flood
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
