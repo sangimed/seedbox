@@ -8,7 +8,7 @@ services:
           service: api@internal
           httpAuth: true
   - name: deluge
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
@@ -39,7 +39,7 @@ services:
           httpAuth: true
           internalPort: 8080
   - name: plex
-    enabled: true
+    enabled: false
     vpn: false
     # uncomment to use custom file with specific parameters for hardware transcoding
     # customFile: plex-hardware-transcoding.yaml
@@ -52,13 +52,13 @@ services:
           httpAuth: false
           internalPort: 32400
   - name: flaresolverr
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: false
       rules: []
   - name: jackett
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
@@ -67,7 +67,7 @@ services:
           httpAuth: true
           internalPort: 9117
   - name: prowlarr
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
@@ -76,16 +76,16 @@ services:
           httpAuth: true
           internalPort: 9696
   - name: sonarr
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
-      enabled: true
+      enabled: false
       rules:
         - host: sonarr.${TRAEFIK_DOMAIN}
           httpAuth: true
           internalPort: 8989
   - name: radarr
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
@@ -94,10 +94,10 @@ services:
           httpAuth: true
           internalPort: 7878
   - name: bazarr
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
-      enabled: true
+      enabled: false
       rules:
         - host: bazarr.${TRAEFIK_DOMAIN}
           httpAuth: true
@@ -112,7 +112,7 @@ services:
           httpAuth: true
           internalPort: 8686
   - name: readarr
-    enabled: false
+    enabled: true
     vpn: false
     traefik:
       enabled: true
@@ -139,7 +139,7 @@ services:
           httpAuth: true
           internalPort: 8083
   - name: komga
-    enabled: false
+    enabled: true
     vpn: false
     traefik:
       enabled: true
@@ -175,7 +175,7 @@ services:
           httpAuth: false
           internalPort: 3579
   - name: overseerr
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
@@ -184,7 +184,7 @@ services:
           httpAuth: false
           internalPort: 5055
   - name: tautulli
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
@@ -211,7 +211,7 @@ services:
           httpAuth: true
           internalPort: 5800
   - name: tdarr
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
@@ -226,7 +226,7 @@ services:
       enabled: false
       rules: []
   - name: nextcloud
-    enabled: true
+    enabled: false
     vpn: false
     traefik:
       enabled: true
@@ -319,7 +319,7 @@ services:
           internalPort: 3000
   # Gluetun is the VPN client service.
   - name: gluetun
-    enabled: false
+    enabled: true
     traefik:
       enabled: false
       rules: []
