@@ -1,6 +1,6 @@
 services:
   mylar:
-    image: lscr.io/linuxserver/mylar3:latest
+    image: lscr.io/linuxserver/mylar3:version-2023.12.23
     container_name: mylar3
     restart: always
     environment:
