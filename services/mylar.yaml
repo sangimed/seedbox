@@ -1,6 +1,7 @@
 services:
   mylar:
-    image: lscr.io/linuxserver/mylar3:latest
+    image: ghcr.io/linuxserver/mylar3:latest
+    platform: linux/amd64
     container_name: mylar3
     restart: always
     environment:

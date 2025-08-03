@@ -1,6 +1,7 @@
 services:
   readarr:
-    image: lscr.io/linuxserver/readarr:nightly
+    image: lscr.io/linuxserver/readarr:latest
+    platform: linux/amd64
     container_name: readarr
     restart: always
     volumes:
